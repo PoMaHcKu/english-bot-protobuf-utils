@@ -1,0 +1,11 @@
+syntax = "proto3";
+package protobuf;
+option java_package = "com.rom.english.protobuf";
+option java_outer_classname = "CallbackProto";
+
+message Callback {
+    string command = 1;
+    string rightAnswer = 2;
+    int64 rightAnswerId = 3;
+    int64 selectedAnswerId = 4;
+}

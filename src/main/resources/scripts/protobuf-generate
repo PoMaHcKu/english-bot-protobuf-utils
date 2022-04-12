@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "#########################################"
+echo "SCRIPT IS RUNNING"
+echo "#########################################"
+
+cd src/main && MAIN_DIR=$(pwd)
+PROTOBUF_DIR="$MAIN_DIR/resources/protobuf"
+JAVA_SRC="$MAIN_DIR/java"
+
+protoc -I="$PROTOBUF_DIR" --java_out="$JAVA_SRC" "$PROTOBUF_DIR/callback-data.proto"
