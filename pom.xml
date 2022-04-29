@@ -66,7 +66,7 @@
 
     <scm>
         <connection>scm:git:git@github.com:PoMaHcKu/english-bot-protobuf-utils.git</connection>
-        <tag>0.2.0-RELEASE</tag>
+        <tag>0.1.0-RELEASE</tag>
   </scm>
 
 </project>
