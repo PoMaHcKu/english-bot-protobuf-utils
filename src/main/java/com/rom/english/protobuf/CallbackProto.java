@@ -14,8 +14,8 @@ public final class CallbackProto {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface CallbackOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:protobuf.Callback)
+  public interface AnswerCallbackOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:protobuf.AnswerCallback)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -55,18 +55,18 @@ public final class CallbackProto {
     long getSelectedAnswerId();
   }
   /**
-   * Protobuf type {@code protobuf.Callback}
+   * Protobuf type {@code protobuf.AnswerCallback}
    */
-  public static final class Callback extends
+  public static final class AnswerCallback extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:protobuf.Callback)
-      CallbackOrBuilder {
+      // @@protoc_insertion_point(message_implements:protobuf.AnswerCallback)
+      AnswerCallbackOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Callback.newBuilder() to construct.
-    private Callback(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use AnswerCallback.newBuilder() to construct.
+    private AnswerCallback(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Callback() {
+    private AnswerCallback() {
       command_ = "";
       rightAnswer_ = "";
     }
@@ -75,7 +75,7 @@ public final class CallbackProto {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new Callback();
+      return new AnswerCallback();
     }
 
     @java.lang.Override
@@ -83,7 +83,7 @@ public final class CallbackProto {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Callback(
+    private AnswerCallback(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -144,15 +144,15 @@ public final class CallbackProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_Callback_descriptor;
+      return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_AnswerCallback_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_Callback_fieldAccessorTable
+      return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_AnswerCallback_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.rom.english.protobuf.CallbackProto.Callback.class, com.rom.english.protobuf.CallbackProto.Callback.Builder.class);
+              com.rom.english.protobuf.CallbackProto.AnswerCallback.class, com.rom.english.protobuf.CallbackProto.AnswerCallback.Builder.class);
     }
 
     public static final int COMMAND_FIELD_NUMBER = 1;
@@ -312,10 +312,10 @@ public final class CallbackProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.rom.english.protobuf.CallbackProto.Callback)) {
+      if (!(obj instanceof com.rom.english.protobuf.CallbackProto.AnswerCallback)) {
         return super.equals(obj);
       }
-      com.rom.english.protobuf.CallbackProto.Callback other = (com.rom.english.protobuf.CallbackProto.Callback) obj;
+      com.rom.english.protobuf.CallbackProto.AnswerCallback other = (com.rom.english.protobuf.CallbackProto.AnswerCallback) obj;
 
       if (!getCommand()
           .equals(other.getCommand())) return false;
@@ -351,69 +351,69 @@ public final class CallbackProto {
       return hash;
     }
 
-    public static com.rom.english.protobuf.CallbackProto.Callback parseFrom(
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseFrom(
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseFrom(
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseFrom(
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseFrom(byte[] data)
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseFrom(
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseFrom(java.io.InputStream input)
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseFrom(
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseDelimitedFrom(java.io.InputStream input)
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseDelimitedFrom(
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseFrom(
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.rom.english.protobuf.CallbackProto.Callback parseFrom(
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -426,7 +426,7 @@ public final class CallbackProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.rom.english.protobuf.CallbackProto.Callback prototype) {
+    public static Builder newBuilder(com.rom.english.protobuf.CallbackProto.AnswerCallback prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -442,26 +442,26 @@ public final class CallbackProto {
       return builder;
     }
     /**
-     * Protobuf type {@code protobuf.Callback}
+     * Protobuf type {@code protobuf.AnswerCallback}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:protobuf.Callback)
-        com.rom.english.protobuf.CallbackProto.CallbackOrBuilder {
+        // @@protoc_insertion_point(builder_implements:protobuf.AnswerCallback)
+        com.rom.english.protobuf.CallbackProto.AnswerCallbackOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_Callback_descriptor;
+        return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_AnswerCallback_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_Callback_fieldAccessorTable
+        return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_AnswerCallback_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.rom.english.protobuf.CallbackProto.Callback.class, com.rom.english.protobuf.CallbackProto.Callback.Builder.class);
+                com.rom.english.protobuf.CallbackProto.AnswerCallback.class, com.rom.english.protobuf.CallbackProto.AnswerCallback.Builder.class);
       }
 
-      // Construct using com.rom.english.protobuf.CallbackProto.Callback.newBuilder()
+      // Construct using com.rom.english.protobuf.CallbackProto.AnswerCallback.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -493,17 +493,17 @@ public final class CallbackProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_Callback_descriptor;
+        return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_AnswerCallback_descriptor;
       }
 
       @java.lang.Override
-      public com.rom.english.protobuf.CallbackProto.Callback getDefaultInstanceForType() {
-        return com.rom.english.protobuf.CallbackProto.Callback.getDefaultInstance();
+      public com.rom.english.protobuf.CallbackProto.AnswerCallback getDefaultInstanceForType() {
+        return com.rom.english.protobuf.CallbackProto.AnswerCallback.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.rom.english.protobuf.CallbackProto.Callback build() {
-        com.rom.english.protobuf.CallbackProto.Callback result = buildPartial();
+      public com.rom.english.protobuf.CallbackProto.AnswerCallback build() {
+        com.rom.english.protobuf.CallbackProto.AnswerCallback result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -511,8 +511,8 @@ public final class CallbackProto {
       }
 
       @java.lang.Override
-      public com.rom.english.protobuf.CallbackProto.Callback buildPartial() {
-        com.rom.english.protobuf.CallbackProto.Callback result = new com.rom.english.protobuf.CallbackProto.Callback(this);
+      public com.rom.english.protobuf.CallbackProto.AnswerCallback buildPartial() {
+        com.rom.english.protobuf.CallbackProto.AnswerCallback result = new com.rom.english.protobuf.CallbackProto.AnswerCallback(this);
         result.command_ = command_;
         result.rightAnswer_ = rightAnswer_;
         result.rightAnswerId_ = rightAnswerId_;
@@ -555,16 +555,16 @@ public final class CallbackProto {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.rom.english.protobuf.CallbackProto.Callback) {
-          return mergeFrom((com.rom.english.protobuf.CallbackProto.Callback)other);
+        if (other instanceof com.rom.english.protobuf.CallbackProto.AnswerCallback) {
+          return mergeFrom((com.rom.english.protobuf.CallbackProto.AnswerCallback)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.rom.english.protobuf.CallbackProto.Callback other) {
-        if (other == com.rom.english.protobuf.CallbackProto.Callback.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.rom.english.protobuf.CallbackProto.AnswerCallback other) {
+        if (other == com.rom.english.protobuf.CallbackProto.AnswerCallback.getDefaultInstance()) return this;
         if (!other.getCommand().isEmpty()) {
           command_ = other.command_;
           onChanged();
@@ -594,11 +594,11 @@ public final class CallbackProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.rom.english.protobuf.CallbackProto.Callback parsedMessage = null;
+        com.rom.english.protobuf.CallbackProto.AnswerCallback parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.rom.english.protobuf.CallbackProto.Callback) e.getUnfinishedMessage();
+          parsedMessage = (com.rom.english.protobuf.CallbackProto.AnswerCallback) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -834,51 +834,695 @@ public final class CallbackProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:protobuf.Callback)
+      // @@protoc_insertion_point(builder_scope:protobuf.AnswerCallback)
     }
 
-    // @@protoc_insertion_point(class_scope:protobuf.Callback)
-    private static final com.rom.english.protobuf.CallbackProto.Callback DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:protobuf.AnswerCallback)
+    private static final com.rom.english.protobuf.CallbackProto.AnswerCallback DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.rom.english.protobuf.CallbackProto.Callback();
+      DEFAULT_INSTANCE = new com.rom.english.protobuf.CallbackProto.AnswerCallback();
     }
 
-    public static com.rom.english.protobuf.CallbackProto.Callback getDefaultInstance() {
+    public static com.rom.english.protobuf.CallbackProto.AnswerCallback getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Callback>
-        PARSER = new com.google.protobuf.AbstractParser<Callback>() {
+    private static final com.google.protobuf.Parser<AnswerCallback>
+        PARSER = new com.google.protobuf.AbstractParser<AnswerCallback>() {
       @java.lang.Override
-      public Callback parsePartialFrom(
+      public AnswerCallback parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Callback(input, extensionRegistry);
+        return new AnswerCallback(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Callback> parser() {
+    public static com.google.protobuf.Parser<AnswerCallback> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Callback> getParserForType() {
+    public com.google.protobuf.Parser<AnswerCallback> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.rom.english.protobuf.CallbackProto.Callback getDefaultInstanceForType() {
+    public com.rom.english.protobuf.CallbackProto.AnswerCallback getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SetGroupCallbackOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:protobuf.SetGroupCallback)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string command = 1;</code>
+     * @return The command.
+     */
+    java.lang.String getCommand();
+    /**
+     * <code>string command = 1;</code>
+     * @return The bytes for command.
+     */
+    com.google.protobuf.ByteString
+        getCommandBytes();
+
+    /**
+     * <code>int64 newGroupId = 3;</code>
+     * @return The newGroupId.
+     */
+    long getNewGroupId();
+  }
+  /**
+   * Protobuf type {@code protobuf.SetGroupCallback}
+   */
+  public static final class SetGroupCallback extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:protobuf.SetGroupCallback)
+      SetGroupCallbackOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SetGroupCallback.newBuilder() to construct.
+    private SetGroupCallback(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SetGroupCallback() {
+      command_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new SetGroupCallback();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SetGroupCallback(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              command_ = s;
+              break;
+            }
+            case 24: {
+
+              newGroupId_ = input.readInt64();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_SetGroupCallback_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_SetGroupCallback_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.rom.english.protobuf.CallbackProto.SetGroupCallback.class, com.rom.english.protobuf.CallbackProto.SetGroupCallback.Builder.class);
+    }
+
+    public static final int COMMAND_FIELD_NUMBER = 1;
+    private volatile java.lang.Object command_;
+    /**
+     * <code>string command = 1;</code>
+     * @return The command.
+     */
+    @java.lang.Override
+    public java.lang.String getCommand() {
+      java.lang.Object ref = command_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        command_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string command = 1;</code>
+     * @return The bytes for command.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getCommandBytes() {
+      java.lang.Object ref = command_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        command_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int NEWGROUPID_FIELD_NUMBER = 3;
+    private long newGroupId_;
+    /**
+     * <code>int64 newGroupId = 3;</code>
+     * @return The newGroupId.
+     */
+    @java.lang.Override
+    public long getNewGroupId() {
+      return newGroupId_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(command_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, command_);
+      }
+      if (newGroupId_ != 0L) {
+        output.writeInt64(3, newGroupId_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(command_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, command_);
+      }
+      if (newGroupId_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, newGroupId_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.rom.english.protobuf.CallbackProto.SetGroupCallback)) {
+        return super.equals(obj);
+      }
+      com.rom.english.protobuf.CallbackProto.SetGroupCallback other = (com.rom.english.protobuf.CallbackProto.SetGroupCallback) obj;
+
+      if (!getCommand()
+          .equals(other.getCommand())) return false;
+      if (getNewGroupId()
+          != other.getNewGroupId()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + COMMAND_FIELD_NUMBER;
+      hash = (53 * hash) + getCommand().hashCode();
+      hash = (37 * hash) + NEWGROUPID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getNewGroupId());
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.rom.english.protobuf.CallbackProto.SetGroupCallback prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code protobuf.SetGroupCallback}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:protobuf.SetGroupCallback)
+        com.rom.english.protobuf.CallbackProto.SetGroupCallbackOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_SetGroupCallback_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_SetGroupCallback_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.rom.english.protobuf.CallbackProto.SetGroupCallback.class, com.rom.english.protobuf.CallbackProto.SetGroupCallback.Builder.class);
+      }
+
+      // Construct using com.rom.english.protobuf.CallbackProto.SetGroupCallback.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        command_ = "";
+
+        newGroupId_ = 0L;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.rom.english.protobuf.CallbackProto.internal_static_protobuf_SetGroupCallback_descriptor;
+      }
+
+      @java.lang.Override
+      public com.rom.english.protobuf.CallbackProto.SetGroupCallback getDefaultInstanceForType() {
+        return com.rom.english.protobuf.CallbackProto.SetGroupCallback.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.rom.english.protobuf.CallbackProto.SetGroupCallback build() {
+        com.rom.english.protobuf.CallbackProto.SetGroupCallback result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.rom.english.protobuf.CallbackProto.SetGroupCallback buildPartial() {
+        com.rom.english.protobuf.CallbackProto.SetGroupCallback result = new com.rom.english.protobuf.CallbackProto.SetGroupCallback(this);
+        result.command_ = command_;
+        result.newGroupId_ = newGroupId_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.rom.english.protobuf.CallbackProto.SetGroupCallback) {
+          return mergeFrom((com.rom.english.protobuf.CallbackProto.SetGroupCallback)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.rom.english.protobuf.CallbackProto.SetGroupCallback other) {
+        if (other == com.rom.english.protobuf.CallbackProto.SetGroupCallback.getDefaultInstance()) return this;
+        if (!other.getCommand().isEmpty()) {
+          command_ = other.command_;
+          onChanged();
+        }
+        if (other.getNewGroupId() != 0L) {
+          setNewGroupId(other.getNewGroupId());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.rom.english.protobuf.CallbackProto.SetGroupCallback parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.rom.english.protobuf.CallbackProto.SetGroupCallback) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object command_ = "";
+      /**
+       * <code>string command = 1;</code>
+       * @return The command.
+       */
+      public java.lang.String getCommand() {
+        java.lang.Object ref = command_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          command_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string command = 1;</code>
+       * @return The bytes for command.
+       */
+      public com.google.protobuf.ByteString
+          getCommandBytes() {
+        java.lang.Object ref = command_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          command_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string command = 1;</code>
+       * @param value The command to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCommand(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        command_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string command = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCommand() {
+        
+        command_ = getDefaultInstance().getCommand();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string command = 1;</code>
+       * @param value The bytes for command to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCommandBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        command_ = value;
+        onChanged();
+        return this;
+      }
+
+      private long newGroupId_ ;
+      /**
+       * <code>int64 newGroupId = 3;</code>
+       * @return The newGroupId.
+       */
+      @java.lang.Override
+      public long getNewGroupId() {
+        return newGroupId_;
+      }
+      /**
+       * <code>int64 newGroupId = 3;</code>
+       * @param value The newGroupId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNewGroupId(long value) {
+        
+        newGroupId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 newGroupId = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNewGroupId() {
+        
+        newGroupId_ = 0L;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:protobuf.SetGroupCallback)
+    }
+
+    // @@protoc_insertion_point(class_scope:protobuf.SetGroupCallback)
+    private static final com.rom.english.protobuf.CallbackProto.SetGroupCallback DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.rom.english.protobuf.CallbackProto.SetGroupCallback();
+    }
+
+    public static com.rom.english.protobuf.CallbackProto.SetGroupCallback getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<SetGroupCallback>
+        PARSER = new com.google.protobuf.AbstractParser<SetGroupCallback>() {
+      @java.lang.Override
+      public SetGroupCallback parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SetGroupCallback(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SetGroupCallback> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SetGroupCallback> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.rom.english.protobuf.CallbackProto.SetGroupCallback getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Callback_descriptor;
+    internal_static_protobuf_AnswerCallback_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Callback_fieldAccessorTable;
+      internal_static_protobuf_AnswerCallback_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_protobuf_SetGroupCallback_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_protobuf_SetGroupCallback_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -888,22 +1532,30 @@ public final class CallbackProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023callback-data.proto\022\010protobuf\"a\n\010Callb" +
-      "ack\022\017\n\007command\030\001 \001(\t\022\023\n\013rightAnswer\030\002 \001(" +
-      "\t\022\025\n\rrightAnswerId\030\003 \001(\003\022\030\n\020selectedAnsw" +
-      "erId\030\004 \001(\003B)\n\030com.rom.english.protobufB\r" +
-      "CallbackProtob\006proto3"
+      "\n\023callback-data.proto\022\010protobuf\"g\n\016Answe" +
+      "rCallback\022\017\n\007command\030\001 \001(\t\022\023\n\013rightAnswe" +
+      "r\030\002 \001(\t\022\025\n\rrightAnswerId\030\003 \001(\003\022\030\n\020select" +
+      "edAnswerId\030\004 \001(\003\"7\n\020SetGroupCallback\022\017\n\007" +
+      "command\030\001 \001(\t\022\022\n\nnewGroupId\030\003 \001(\003B)\n\030com" +
+      ".rom.english.protobufB\rCallbackProtob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_protobuf_Callback_descriptor =
+    internal_static_protobuf_AnswerCallback_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_protobuf_Callback_fieldAccessorTable = new
+    internal_static_protobuf_AnswerCallback_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Callback_descriptor,
+        internal_static_protobuf_AnswerCallback_descriptor,
         new java.lang.String[] { "Command", "RightAnswer", "RightAnswerId", "SelectedAnswerId", });
+    internal_static_protobuf_SetGroupCallback_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_protobuf_SetGroupCallback_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_protobuf_SetGroupCallback_descriptor,
+        new java.lang.String[] { "Command", "NewGroupId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
