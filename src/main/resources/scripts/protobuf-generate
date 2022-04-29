@@ -1,5 +1,5 @@
 #!/bin/bash
-
+### RUN IT FROM PROJECT ROOT
 echo "#########################################"
 echo "SCRIPT IS RUNNING"
 echo "#########################################"
